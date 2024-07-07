@@ -138,3 +138,9 @@ form textarea {
   background: #0d5d56;
   color: #fff;
 }
+form input:focus {
+  outline: none;
+}
+form textarea:focus {
+  outline: none;
+}
