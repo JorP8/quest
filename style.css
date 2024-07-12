@@ -13,26 +13,50 @@ html {
 }
 header {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 10vh;
   background-color: #0c8346;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
+  position: fixed;
+}
+/* menu con links del menu hamburguesa */
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10vh;
+  width: 100%;
+  height: 100vh;
+  display: none; /* ****** */
+  background-color: rgba(7, 189, 104, 0.675);
+  text-align: center;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.menu.active {
+  display: block;
+}
+.menu-toggle i {
+  font-size: 30px;
+  margin: 5px;
+  cursor: pointer;
 }
 .logo i {
-  font-size: 40px;
-  cursor: pointer;
-  color: #d7dddc;
+  font-size: 30px;
+  padding: 5px;
 }
-.menu-hamburguesa i {
-  font-size: 45px;
-  cursor: pointer;
-  color: #d7dddc;
-}
-.menu-nav {
-  display: none;
-}
+
 /* ------ */
 /* hero */
 #hero {
@@ -57,11 +81,11 @@ header {
 .hero-titulo h1 {
   font-size: 90px;
   color: #fff;
-  animation: ache1 4s ease-in;
+  /* animation: ache1 4s ease-in; */
 }
 
 /* animacion de h1 */
-@keyframes ache1 {
+/* @keyframes ache1 {
   0% {
     opacity: 0;
   }
@@ -69,7 +93,7 @@ header {
   100% {
     opacity: 10px;
   }
-}
+} */
 /* ---- */
 .hero-titulo a {
   font-size: 32px;
@@ -104,16 +128,17 @@ header {
 }
 /* titulo */
 .titulo h2 {
-  color: #fff;
+  color: #000;
   font-size: 32px;
 }
 /* formulario */
 .formulario {
   display: flex;
   width: 100%;
-  height: 400px;
+  height: 100vh;
   /* background-color: red; */
   justify-content: center;
+  background-color: #0c8346;
 }
 /* contenedor del formulario */
 .contenedor-formulario {
@@ -123,6 +148,11 @@ header {
   background-color: yellow; */
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.contenedor-formulario h2 {
+  margin: 5px;
+  color: #fff;
 }
 /* inputs del formulario */
 form {

@@ -13,28 +13,27 @@
 
 <body>
     <div class="conteiner">
-        <header>
-
-            <nav class="menu-nav">
-                <ul class="nav-item-lis">
-                    <li class="nav-item-link"><a href="#">Home</a></li>
-                    <li class="nav-item-link"><a href="#">Opción 1</a></li>
-                    <li class="nav-item-link"><a href="#">Opción 2</a></li>
-
+        <header id="header">
+            <!-- menu y links -->
+            <nav class="menu">
+                <ul>
+                    <li class="nav-item-link"><a href="#header">Home</a></li>
+                    <li class="nav-item-link"><a href="#hero">inicio</a></li>
+                    <li class="nav-item-link"><a href="#preg1">Pregunta</a></li>
                 </ul>
             </nav>
-            <!-- --logo-- -->
+            <!-- ----- -->
+
+            <!-- logo de la marca -->
             <div class="logo">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <!-- ------ -->
-
-            <!-- menu hamburguesa -->
-            <div class="menu-hamburguesa">
+            <!--  ------ -->
+            <!-- icono-menu-hamburguesa -->
+            <div class="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <!-- ------ -->
-
+            <!-- ------- -->
 
         </header>
         <section id="hero">
@@ -54,27 +53,28 @@
         </section>
 
         <!-- primera sección -->
-        <section id="sec1">
-            <div class="titulo">
-                <h2>Dime un secreto</h2>
-            </div>
-            <div class="formulario">
-                <div class="contenedor-formulario">
-                    <form action="https://formsubmit.co/jorgepelozo2017@gmail.com" method="POST" />
-                    <input type="hidden" name="_next" value="https://quest-three-chi.vercel.app/">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="nombre" placeholder="Nombre (opcional)">
-                    <textarea name="mensaje" cols="30" rows="10" placeholder="Escribi acá" required></textarea>
+        <!--   <section id="sec1"> -->
 
-                    <input type="submit" value="Enviar mensaje" class="btn-enviar">
-                    </form>
-
-
-
-
-
+        <div class="formulario">
+            <div class="contenedor-formulario">
+                <div class="titulo" id="preg1">
+                    <h2>Dime un secreto</h2>
                 </div>
+                <form action="https://formsubmit.co/jorgepelozo2017@gmail.com" method="POST" />
+                <input type="hidden" name="_next" value="https://quest-three-chi.vercel.app/">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="nombre" placeholder="Nombre (opcional)">
+                <textarea name="mensaje" cols="30" rows="10" placeholder="Escribi acá" required></textarea>
+
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+                </form>
+
+
+
+
+
             </div>
+        </div>
 
         </section>
 
